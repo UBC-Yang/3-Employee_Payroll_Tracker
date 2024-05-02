@@ -7,13 +7,13 @@ const collectEmployees = function() {
   let loop = true
   const employees = []
   while (loop == true) {
-    const firstName = prompt('first-name');
-    const lastName = prompt('last-name');
-    const salary = prompt('salary');
+    const firstName = prompt('Enter first name');
+    const lastName = prompt('Enter last name');
+    const salary = prompt('Enter salary');
     employees.push({
       firstName: firstName, lastName: lastName, salary: salary
     });
-    const addEmployee = confirm('add-employee');
+    const addEmployee = confirm('Would you like to add another employee?');
     if (addEmployee == false) {
       loop = false
     }
@@ -22,16 +22,21 @@ const collectEmployees = function() {
 }
 
 // Display the average salary
- // TODO: Calculate and display the average salary
+// TODO: Calculate and display the average salary
 const displayAverageSalary = function(employeesArray) {
-
+  const totalSalary = [];
+  const totalEmployees = [];
+  console.log ("Average employee salary is ");
 }
 
 // Select a random employee
 // TODO: Select and display a random employee
 const getRandomEmployee = function(employeesArray) {
-
+  const employees = [];
+  return Math.floor(Math.random()*employees.length);
+  console.log();
 }
+
 
 /*
   ====================
