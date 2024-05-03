@@ -4,4 +4,10 @@ This week's Challenge requires you to modify starter code to create an applicati
 
 ## Screenshot
 
+![Screenshot](<Assets/Screenshot 2024-05-02 at 8.54.39 PM.png>)
+
 ## Link
+GitHub: https://github.com/UBC-Yang/3-Employee_Payroll_Tracker
+
+Deployed Link: https://ubc-yang.github.io/3-Employee_Payroll_Tracker/
+
