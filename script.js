@@ -9,7 +9,11 @@ const collectEmployees = function() {
   while (loop == true) {
     const firstName = prompt('Enter first name');
     const lastName = prompt('Enter last name');
-    const salary = prompt('Enter salary');
+    let salaryStr = prompt('Enter salary as a valid number');
+    let salary = parseFloat(salaryStr);
+    if (isNaN(salary)) {
+      salary = 0;
+    }
     employees.push({
       firstName: firstName, lastName: lastName, salary: salary
     });
@@ -21,15 +25,16 @@ const collectEmployees = function() {
   return employees
 }
 
+
 // Display the average salary
 // TODO: Calculate and display the average salary
 const displayAverageSalary = function(employeesArray) {
   let salary = 0;
   for (let employee of employeesArray) {
     salary += parseInt(employee.salary);
-  };
+  } 
   const average = salary/employeesArray.length;
-  console.log(`The average employee salary is ${average}`);
+  console.log(`The average employee salary is $ ${average}`);
 };
 
 // Select a random employee
